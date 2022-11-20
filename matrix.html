@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>matrix</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        // var array A[[1,2],[1,3]]: // var array B[[2,2],[1,2]]:
+
+
+        var matrixA=[[1,2],[1,3]];
+        var matrixB=[[2,2],[1,2]];
+        var rowA=matrixA.length;
+        console.log(rowA);
+        var colA=matrixA[0].length;
+        console.log(colA);
+        var rowB=matrixB.length;
+        console.log(rowB);
+        var colB=matrixB[0].length;
+        console.log(colB);
+        if(rowA==rowB & colA==colB){
+            console.log("rowa==rowb");
+            for(var i=0;i<rowA;i++){
+                for(var j=0;j<rowB;j++){
+                    var add=" ";
+                    add=matrixA[i][j]+matrixB[i][j];
+                    document.write(add);
+                }
+                document.write("<br>");
+            }
+        }
+        else{
+            console.log("row and col not equal");
+        }
+
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+         // var a[[1,2],[3,4]]: // var b[[1,2,3],[2,3,4]]:
+
+         var matrixA=[[1,2],[3,4]];
+        var matrixB=[[1,2,3],[2,3,4]];
+        var rowA=matrixA.length;
+        console.log(rowA);
+        var colA=matrixA[0].length;
+        console.log(colA);
+        var rowB=matrixB.length;
+        console.log(rowB);
+        var colB=matrixB[0].length;
+        console.log(colB);
+        if(rowA==rowB & colA==colB){
+            console.log("rowa==rowb");
+            for(var i=0;i<rowA;i++){
+                for(var j=0;j<rowB;j++){
+                    var add=" ";
+                    add=matrixA[i][j]+matrixB[i][j];
+                    document.write(add);
+                }
+                document.write("<br>");
+            }
+        }
+        else{
+            console.log("row and col not equal");
+        }
+
+         // var c[[4,5],[6,7]]: // var d[[3,4],[3,2]]:
+
+         var matrixA=[[4,5],[6,7]];
+        var matrixB=[[3,4],[3,2]];
+        var rowA=matrixA.length;
+        console.log(rowA);
+        var colA=matrixA[0].length;
+        console.log(colA);
+        var rowB=matrixB.length;
+        console.log(rowB);
+        var colB=matrixB[0].length;
+        console.log(colB);
+        if(rowA==rowB & colA==colB){
+            console.log("rowa==rowb");
+            for(var i=0;i<rowA;i++){
+                for(var j=0;j<rowB;j++){
+                    var add=" ";
+                    add=matrixA[i][j]+matrixB[i][j];
+                    document.write(add);
+                }
+                document.write("<br>");
+            }
+        }
+        else{
+            console.log("row and col not equal");
+        }
+
+    </script>
+</body>
+</html>

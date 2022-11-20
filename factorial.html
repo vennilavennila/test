@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>factorial</title>
+</head>
+<body>  
+    <script>
+     function counDown(fromNumber){
+    if(fromNumber==1){
+        return 1;
+    }
+    else{
+        return fromNumber * counDown(fromNumber-1);
+    }
+}
+var result=counDown(3);
+document.write("factorial :"+ result);
+    </script>
+</body>
+</html>

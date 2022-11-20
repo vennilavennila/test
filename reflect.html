@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>reflect</title>
+    <style>
+        #box {
+            height: 400px;
+            width: 450px;
+            background-color: black;
+            margin-left: 100px;
+            margin-top: 100px;
+            border-radius: 20px;
+            -webkit-box-reflect: below 1px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+            position: relative;
+        }
+        #container {
+            height: 100px;
+            width: 530px;
+            background-color: blue;
+            position: absolute;
+            top: 166px;
+            left: 67px;
+        }
+        #zero {
+            height: 100px;
+            width: 100px;
+            float: left;
+            margin-left: 50px;
+        }
+        #six {
+            height: 100px;
+            width: 100px;
+            float: left;
+        }
+        #five {
+            height: 100px;
+            width: 100px;
+            float: left;
+        }
+        #eight {
+            height: 100px;
+            width: 100px;
+            float: left;
+        }
+        #start {
+            height: 50px;
+            width: 100px;
+            background-color: white;
+            float: left;
+            margin-top: 300px;
+            margin-left: 50px;
+            border-radius: 10px;
+        }
+        #pause {
+            height: 50px;
+            width: 100px;
+            background-color: white;
+            float: left;
+            margin-top: 300px;
+            margin-left: 20px;
+            border-radius: 10px;
+        }
+        #reset {
+            height: 50px;
+            width: 100px;
+            background-color: white;
+            float: left;
+            margin-top: 300px;
+            margin-left: 20px;
+            border-radius: 10px;
+        }
+        h3 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+            color: white;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="start">
+            <h3>Start</h3>
+        </div>
+        <div id="pause">
+            <h3>Pause</h3>
+        </div>
+        <div id="reset">
+            <h3>Reset</h3>
+        </div>
+    </div>
+    <div id="container">
+        <div id="zero">
+            <h2>00 :</h2>
+        </div>
+        <div id="six">
+            <h2>06 :</h2>
+        </div>
+        <div id="five">
+            <h2>35 :</h2>
+        </div>
+        <div id="eight">
+            <h2>168</h2>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>drop down</title>
+        <style>
+            body{
+                background-color: lightgray;
+            }
+            #dropdown{
+                position: relative;
+            }
+            #but{
+                background-color: white;
+                border: 1px solid white;
+                padding: 5px;
+            }
+            #container{
+                background-color: white;
+                position: absolute;
+                width: 150px;
+                margin-top: 10px;
+            }
+            p{
+                border: 1px solid white;
+                padding: 3px;
+            }
+            #container p:hover{
+                background-color: skyblue;
+            }
+            #but:hover{
+                background-color: skyblue;
+            }
+            #dropdown:hover#container{
+                display: block;
+                background-color: skyblue;
+            }
+         </style>  
+    </head>
+    <body>
+        <div id="dropdown">
+            <button type="button"id="but">NO DROPDOWN</button>
+            <button type="button"id="but">DROPDOWN 1
+                <div id="container">
+                        <p>DROP ITEM 1</p>
+                        <p>DROP ITEM 2</p>
+                        <p>DROP ITEM 3</p>
+                </div>
+            </button>
+           
+            <button type="button"id="but">NO DROPDOWN</button>
+            <button type="button"id="but">DROPDOWN 2</button>
+           
+        </div>
+    </body>
+</html>
+
+
+

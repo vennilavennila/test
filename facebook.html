@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+    <title>div</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+        #box{
+            height: 400px;
+            width: 1000px;
+            margin: auto;
+            margin-top: 50px;
+            box-shadow:10px 10px 10px darkgray;
+        }
+        #container1{
+            height: 399px;
+            width: 500px;
+            float: left;
+            background-color: white; 
+        }
+        #container2{
+            height: 399px;
+            width: 496px;
+            float: left;
+            background-color:red;
+        }
+        h1{
+            text-align: center;
+        }
+        #facebook{
+            height: 60px;
+            width: 60px;
+            border: 1px solid lightgrey;
+            background-image: url(./vennilak/image2/superimage/vinayagar/facebook\ logo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 30px;
+            margin-left: 180px;
+        }
+        #twitter{
+            height: 60px;
+            width: 60px;
+            border: 1px solid lightgrey;
+            background-image: url(./vennilak/image1/happy/twitter\ logo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 30px;
+            float: left;
+            margin-left: 274px;
+            margin-top: -61px;
+        }
+        p{
+            text-align: center;
+        }
+        input[type=email]{
+            display: block;
+            padding: 5px;
+            margin-left:50px;
+            width: 300px;
+            background-color: lightgrey;
+            border: none;
+        }
+        input[type=pwd]{
+            display: block;
+            padding: 5px;
+            margin-left:50px;
+            margin-top: 30px;
+            width: 300px;
+            background-color: lightgrey;
+            border: none;
+        }
+        input[type=submit]{
+            margin-left:200px;
+            border-radius: 30px;
+            padding: 10px;
+            width: 100px;
+            border: none;
+            background-color: red;
+            color: white;
+        }
+        .text{
+            text-align: center;
+            color: white;
+            margin-top: 100px;
+        }
+        .para{
+            text-align: center;
+            color: white;
+        }
+        .text1{
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+   <div id="box">
+    <div id="container1">
+        <h1>Login</h1>
+        <div id="facebook"></div>
+        <div id="twitter"></div>
+        <p>or use your account</p>
+        <input type="email"id="mail"name="email"value="Email">
+        <input type="pwd"id="password"name="password"value="Password">
+        <p>Forgot your password?</p>
+        <input type="submit"value="LOG IN">
+    </div>
+    <div id="container2">
+        <h1 class="text">HTML CSS LOGIN</h1>
+        <h1 class="text1">FORM</h1>
+        <p class="para">This login form is created using pure <br>
+        HTML and CSS. For social icons. <br>
+    FontAwesome is used.</p>
+    </div>
+   </div>
+</body>
+</html>

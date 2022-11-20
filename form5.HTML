@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+        <style>
+           body{
+            background-color: darkmagenta;
+           } 
+           #container{
+                height: 400px;
+                width: 600px;
+                border: 1px solid black;
+                margin: auto;
+                background-color:darkviolet;
+           }
+           ol{
+            color: white;
+           }
+           label{
+            margin-right: 40px;
+           }
+          
+        </style>
+    </head>
+    <body>
+        <form>
+            <div id="container">
+                <ol>
+                    <label for="name">Name:</label>
+                    <input type="text"id="fname"name="your name">
+                </ol>
+                <ol>
+                    <label for="mailid">Email:</label>
+                    <input type="email"id="mailid"name="mailid">
+                </ol>
+                <ol>
+                    <label for="pwd">Password:</label>
+                    <input type="password"id="pwd"name="password">
+                </ol>
+                <ol>
+                    <label for="phone num">Phone Number:</label>
+                    <input type="phone num"id="phone num"name="phone num">
+                </ol>
+                <ol>
+                    <label for="gender">Gender:</label>
+                    <label for="male">Male:</label>
+                    <input type="radio"id="male"name="gender">
+                    <label for="female">Female:</label>
+                    <input type="radio"id="female"name="gender">
+                    <label for="other">Other:</label>
+                    <input type="radio"id="other"name="other">
+
+                </ol>
+                <ol>
+                   <label for="language">language:</label>
+                   <select id="language"name="language">
+                    <option value="html">select language</option>
+                 </select>
+                </ol>
+                <ol>
+                    <label for="code">Zip Code:</label>
+                    <input type="zip code"id="code"name="zip code">
+                </ol>
+                <ol>
+                    <label for="about">About:</label>
+                    <textarea style="height=50px;width=130px">
+                    </textarea>
+                </ol>
+                <ol> 
+                    <input type="Submit"value="Register" maxlength="5">
+                 </ol> 
+            </div>
+        </form>
+
+    </body>
+</html>

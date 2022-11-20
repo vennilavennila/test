@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculator</title>
+        <style>
+            body{
+                background-color:darkgoldenrod;
+            }
+            #container{
+                height: 600px;
+                width: 600px;
+                border: 1px solid darkblue;
+                margin: auto;
+                background-color: darkblue;
+            }
+            #top{
+                height: 50px;
+                width: 500px;
+                border: 1px solid darkblue;
+                margin-top: 40px;
+                margin-left: 50px;
+                background-color: aquamarine;
+            }
+            #firstpart{
+                height: 100px;
+                width: 599px;
+                border: 1px solid darkblue;
+                background-color: darkblue;
+            }
+            #secondpart{
+                height: 100px;
+                width: 599px;
+                border: 1px solid darkblue;
+                background-color: darkblue;
+            }
+            #thirthpart{
+                height: 100px;
+                width: 599px;
+                border: 1px solid darkblue;
+                background-color: darkblue;
+            }
+            #fourpart{
+                height: 100px;
+                width: 599px;
+                border: 1px solid darkblue;
+                background-color: darkblue;
+            }
+            #fivepart{
+                height: 100px;
+                width: 599px;
+                border: 1px solid darkblue;
+                background-color: darkblue;
+            }
+           #mrc{
+                height: 60px;
+                width: 60px;
+                border: 1px solid black;
+                float: left;
+                margin-top: 20px;
+                margin-left: 70px;
+                background-color: darkgray;
+                border-radius: 20px;
+            }
+            #mn{
+                height: 60px;
+                width: 60px;
+                border: 1px solid black;
+                float: left;
+                margin-top: 20px;
+                margin-left: 70px;
+                background-color: darkgray;
+                border-radius: 20px;
+            }
+            #mp{
+                height: 60px;
+                width: 60px;
+                border: 1px solid black;
+                float: left;
+                margin-top: 20px;
+                margin-left: 70px;
+                background-color: darkgray;
+                border-radius: 20px;
+            }
+            #lash{
+                height: 60px;
+                width: 60px;
+                border: 1px solid black;
+                float: left;
+                margin-top: 20px;
+                margin-left: 70px;
+                background-color: red;
+                border-radius: 20px;
+            }
+            #seven{
+                height: 60px;
+                width: 60px;
+                border: 1px solid black;
+                float: left;
+                margin-top: 20px;
+                margin-left: 70px;
+                background-color: black;
+                border-radius: 20px;
+            }
+            #eight{
+                height: 60px;
+                width: 60px;
+                border: 1px solid black;
+                float: left;
+                margin-top: 20px;
+                margin-left: 70px;
+                background-color: black;
+                border-radius: 20px;
+            }
+            #nine{
+                height: 60px;
+                width: 60px;
+                border: 1px solid black;
+                float: left;
+                margin-top: 20px;
+                margin-left: 70px;
+                background-color: black;
+                border-radius: 20px;
+            }
+            #star{
+                height: 60px;
+                width: 60px;
+                border: 1px solid black;
+                float: left;
+                margin-top: 20px;
+                margin-left: 70px;
+                background-color: red;
+                border-radius: 20px;
+            }
+            #four{
+                height: 60px;
+                width: 60px;
+                border: 1px solid black;
+                float: left;
+                margin-top: 20px;
+                margin-left: 70px;
+                background-color: black;
+                border-radius: 20px;
+            }
+            #five{
+               height: 60px;
+               width: 60px;
+               border: 1px solid black;
+               float: left;
+               margin-top: 20px;
+               margin-left: 70px;
+               background-color: black;
+               border-radius: 20px;
+            }
+            #six{
+               height: 60px;
+               width: 60px;
+              border: 1px solid black;
+              float: left;
+              margin-top: 20px;
+              margin-left: 70px;
+              background-color: black;
+              border-radius: 20px;
+            }
+            #minus{
+              height: 60px;
+              width: 60px;
+              border: 1px solid black;
+              float: left;
+              margin-top: 20px;
+              margin-left: 70px;
+              background-color: red;
+              border-radius: 20px;
+            }
+            #one{
+              height: 60px;
+              width: 60px;
+              border: 1px solid black;
+              float: left;
+              margin-top: 20px;
+              margin-left: 70px;
+              background-color: black;
+              border-radius: 20px;
+            }
+            #two{
+              height: 60px;
+              width: 60px;
+              border: 1px solid black;
+              float: left;
+              margin-top: 20px;
+              margin-left: 70px;
+              background-color: black;
+              border-radius: 20px;
+            }
+            #three{
+              height: 60px;
+              width: 60px;
+              border: 1px solid black;
+              float: left;
+              margin-top: 20px;
+              margin-left: 70px;
+              background-color: black;
+              border-radius: 20px;
+            }
+            #plus{
+              height: 60px;
+              width: 60px;
+              border: 1px solid black;
+              float: left;
+              margin-top: 20px;
+              margin-left: 70px;
+              background-color: red;
+              border-radius: 20px;
+            }
+            #zero{
+              height: 60px;
+              width: 60px;
+              border: 1px solid black;
+              float: left;
+              margin-top: 20px;
+              margin-left: 70px;
+              background-color: black;
+              border-radius: 20px;
+            }
+            #dot{
+              height: 60px;
+              width: 60px;
+              border: 1px solid black;
+              float: left;
+              margin-top: 20px;
+              margin-left: 70px;
+              background-color: black;
+              border-radius: 20px;
+            }
+            #caps{
+              height: 60px;
+              width: 60px;
+              border: 1px solid black;
+              float: left;
+              margin-top: 20px;
+              margin-left: 70px;
+              background-color: black;
+              border-radius: 20px;
+            }
+            #equal{
+              height: 60px;
+              width: 60px;
+              border: 1px solid black;
+              float: left;
+              margin-top: 20px;
+              margin-left: 70px;
+              background-color: orange;
+              border-radius: 20px;
+            }
+            h2{
+                color: white;
+                text-align: center;
+            }
+            </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="top"></div>
+            <div id="firstpart">
+                <div id="mrc">
+                    <h2>mrc</h2>
+                </div>
+                <div id="mn">
+                    <h2>m-</h2>
+                </div>
+                <div id="mp">
+                    <h2>m+</h2>
+                </div>
+                <div id="lash">
+                    <h2>/</h2>
+                </div>
+            </div>
+            <div id="secondpart">
+                <div id="seven">
+                    <h2>7</h2>
+                </div>
+                <div id="eight">
+                    <h2>8</h2>
+                </div>
+                <div id="nine">
+                    <h2>9</h2>
+                </div>
+                <div id="star">
+                    <h2>*</h2>
+                </div>
+            </div>
+            <div id="thirthpart">
+                <div id="four">
+                    <h2>4</h2>
+                </div>
+                <div id="five">
+                    <h2>5</h2>
+                </div>
+                <div id="six">
+                    <h2>6</h2>
+                </div>
+                <div id="minus">
+                    <h2>-</h2>
+                </div>
+            </div>
+            <div id="fourpart">
+                <div id="one">
+                    <h2>1</h2>
+                </div>
+                <div id="two">
+                    <h2>2</h2>
+                </div>
+                <div id="three">
+                    <h2>3</h2>
+                </div>
+                <div id="plus">
+                    <h2>+</h2>
+                </div>
+            </div>
+            <div id="fivepart">
+                <div id="zero">
+                    <h2>0</h2>
+                </div>
+                <div id="dot">
+                    <h2>.</h2>
+                </div>
+                <div id="caps">
+                    <h2>C</h2>
+                </div>
+                <div id="equal">
+                    <h2>=</h2>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

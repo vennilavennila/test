@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>svg</title>
+        <style>
+            #containter{
+                height: 300px;
+                width: 1000px;
+                border: 2px solid black;
+            }
+            #left{
+                height: 300px;
+                width: 400px;
+                border: 1px solid white;
+                float: left;
+               
+            }
+            #center{
+                height: 300px;
+                width: 400px;
+                border: 1px solid white;
+                float: left;
+               
+            }
+            #right{
+                height: 298px;
+                width: 194px;
+                border: 1px solid white;
+                float: left;
+                
+            }
+            svg{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="containter">
+            <div id="left">
+                <h2>SVG pentagon</h2>
+                <svg height="300" width="300">
+                <polygon points="60,13 110,48 92,110 30,110 13,48" stroke="red" stroke-width="5" fill="black"></polygon>
+                </svg>
+            </div>
+            <div id="center">
+                <h2>SVG hexagon</h2>
+                <svg height="300" width="300">
+                <polygon points="50,3 100,28 100,75 50,100 3,75 3,25" stroke="red" stroke-width="5" fill="black"></polygon>
+                </svg>
+            </div>
+           <div id="right">
+               <h2>SVG octagon</h2>
+               <svg height="200" width="300">
+               <polygon points="40,13 80,13 110,40 110,80 80,110 40,110 13,80 13,40" stroke="red" stroke-width="5" fill="black"></polygon>
+               </svg>
+           </div>
+        </div> 
+    </body>
+</html>

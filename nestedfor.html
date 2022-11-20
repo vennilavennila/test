@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>number pattern</title>
+</head>
+
+<body>
+   <script>
+      /* 1)   01
+              01 02
+              01 02 03
+              01 02 03 04
+              01 02 03 04 05 */
+      for (var i = 1; i <= 5; i++) {
+         // console.log(i);
+         for (var j = 1; j <= i; j++) {
+            document.write("0" + j + " ");
+         }
+         document.write("<br>");
+      }
+      document.write("<hr>");
+
+
+      /* 2)1
+           22
+           333
+           4444
+           55555 */
+      for (var i = 1; i <= 5; i++) {
+         // console.log(i);
+         for (var j = 1; j <= i; j++) {
+            document.write(i + " ");
+         }
+         document.write("<br>");
+      }
+      document.write("<hr>");
+      /* 3) 12345
+            2345
+            345
+            45
+            5  */
+      for (var i = 1; i <= 5; i++) {
+         document.write(i + " ");
+      }
+      document.write("<br>");
+      for (var i = 2; i <= 5; i++) {
+         document.write(i + " ");
+      }
+      document.write("<br>");
+      for (var i = 3; i <= 5; i++) {
+         document.write(i + " ");
+      }
+      document.write("<br>");
+      for (var i = 4; i <= 5; i++) {
+         document.write(i + " ");
+      }
+      document.write("<br>");
+      for (var i = 5; i <= 5; i++) {
+         document.write(i + " ");
+      }
+      document.write("<br>");
+      document.write("<hr>");
+
+      /*    4) 1
+               12
+               123 
+               1234
+               12345  */
+      for (var i = 1; i <= 5; i++) {
+         // console.log(i);
+         for (var j = 1; j <= i; j++) {
+            document.write(j + " ");
+         }
+         document.write("<br>");
+      }
+      document.write("<hr>");
+
+      /*  5)   1
+               0 1
+               1 0 1
+               0 1 0 1
+               1 0 1 0 1 */
+      for (var i = 1; i <= 1; i++) {
+         //console.log(i);
+         for (var j = 1; j <= i; j++) {
+            document.write(j + " ");
+         }
+         document.write("<br>");
+      }
+      for (var i = 0; i <= 1; i++) {
+         document.write(i + " ");
+      }
+      document.write("<br>");
+      for (var i = 1; i <= 1; i++) {
+         //console.log(i);
+         for (var j = 1; j <= i; j++) {
+            document.write(j + " ");
+         }
+      }
+      for (var i = 0; i <= 1; i++) {
+         document.write(i + " ");
+      }
+      document.write("<br>");
+      for (var i = 0; i <= 1; i++) {
+         document.write(i + " ");
+      }
+      for (var i = 0; i <= 1; i++) {
+         document.write(i + " ");
+      }
+      document.write("<br>");
+      for (var i = 1; i <= 1; i++) {
+         //console.log(i);
+         for (var j = 1; j <= i; j++) {
+            document.write(j + " ");
+         }
+      }
+      for (var i = 0; i <= 1; i++) {
+         document.write(i + " ");
+      }
+      for (var i = 0; i <= 1; i++) {
+         document.write(i + " ");
+      }
+
+      document.write("<hr>");
+      /* 6)   12345
+              1234
+              123
+              12
+              1 
+              
+              1
+              12
+              123 
+              1234
+              12345  */
+      for (var i = 5; i >= 1; i--) {
+         // console.log(i);
+         for (var j = 1; j <= i; j++) {
+            document.write(j + " ");
+         }
+         document.write("<br>");
+      }
+      document.write("<br>");
+      for (var i = 1; i <= 5; i++) {
+         // console.log(i);
+         for (var j = 1; j <= i; j++) {
+            document.write(j + " ");
+         }
+         document.write("<br>");
+      }
+      document.write("<hr>");
+      /*   7)  1
+               23
+               456
+               78910
+               1112131415 */
+      var count = 1;
+      for (var i = 1; i <= 5; i++) {
+         //console.log(i);
+         for (var j = 1; j <= i; j++) {
+            document.write(count);
+            count++;
+         }
+         document.write("<br>");
+      }
+      document.write("<hr>");
+      /*  8)   5
+               54
+               543
+               5432
+               54321*/
+      for (var i = 5; i <= 5; i++) {
+         document.write(i + " ");
+      }
+      document.write("<br>");
+      for (var i = 5; i >= 4; i--) {
+         document.write(i + " ");
+      }
+      document.write("<br>");
+      for (var i = 5; i >= 3; i--) {
+         document.write(i + " ");
+      }
+      document.write("<br>");
+      for (var i = 5; i >= 2; i--) {
+         document.write(i + " ");
+      }
+      document.write("<br>");
+      for (var i = 5; i >= 1; i--) {
+         document.write(i + " ");
+      }
+      document.write("<hr>");
+      /* 9)     1
+                2 2
+                3 3
+                4 4
+                3 3
+                2 2
+                1*/
+      for (var i = 1; i <= 2; i++) {
+         //console.log(i);
+         for (var j = 1; j <= i; j++) {
+            document.write(i + " ");
+         }
+         document.write("<br>");
+      }
+
+
+      for (var i = 3; i <= 3; i++) {
+         document.write(i + " ");
+      }
+      for (var i = 3; i <= 3; i++) {
+         document.write(i + " ");
+      }
+
+      document.write("<br>");
+      for (var i = 4; i <= 4; i++) {
+         document.write(i + " ");
+      }
+      for (var i = 4; i <= 4; i++) {
+         document.write(i + " ");
+      }
+      document.write("<br>");
+      for (var i = 3; i <= 3; i++) {
+         document.write(i + " ");
+      }
+      for (var i = 3; i <= 3; i++) {
+         document.write(i + " ");
+      }
+      document.write("<br>");
+      for (var i = 2; i >= 2; i--) {
+         //console.log(i);
+         for (var j = 1; j <= i; j++) {
+            document.write(i + " ");
+         }
+         document.write("<br>");
+      }
+      for (var i = 1; i <= 1; i++) {
+         document.write(i + " ");
+      }
+      document.write("<hr>");
+      /* 10)1
+            12
+            123
+            1234
+            12345
+            1234
+            123
+            12
+            1 */
+      for (var i = 1; i <= 5; i++) {
+         // console.log(i);
+         for (var j = 1; j <= i; j++) {
+            document.write(j + " ");
+         }
+         document.write("<br>");
+      }
+      for (var i = 4; i >= 1; i--) {
+         // console.log(i);
+         for (var j = 1; j <= i; j++) {
+            document.write(j + " ");
+         }
+         document.write("<br>");
+      }
+      document.write("<hr>");
+      /* 11)   11111
+               2222
+               333
+               44
+               5
+           */
+      for (var i = 1; i <= 1; i++) {
+         document.write(i + " ");
+      }
+      for (var i = 1; i <= 1; i++) {
+         document.write(i + " ");
+      }
+      for (var i = 1; i <= 1; i++) {
+         document.write(i + " ");
+      }
+      for (var i = 1; i <= 1; i++) {
+         document.write(i + " ");
+      }
+      for (var i = 1; i <= 1; i++) {
+         document.write(i + " ");
+      }
+      document.write("<br>");
+      for (var i = 2; i <= 2; i++) {
+         document.write(i + " ");
+      }
+      for (var i = 2; i <= 2; i++) {
+         document.write(i + " ");
+      }
+      for (var i = 2; i <= 2; i++) {
+         document.write(i + " ");
+      }
+      for (var i = 2; i <= 2; i++) {
+         document.write(i + " ");
+      }
+      document.write("<br>");
+      for (var i = 3; i <= 3; i++) {
+         document.write(i + " ");
+      }
+      for (var i = 3; i <= 3; i++) {
+         document.write(i + " ");
+      }
+      for (var i = 3; i <= 3; i++) {
+         document.write(i + " ");
+      }
+      document.write("<br>");
+      for (var i = 4; i <= 4; i++) {
+         document.write(i + " ");
+      }
+      for (var i = 4; i <= 4; i++) {
+         document.write(i + " ");
+      }
+      document.write("<br>");
+      for (var i = 5; i <= 5; i++) {
+         document.write(i + " ");
+      }
+      document.write("<hr>");
+      /* 12)   12344321
+               123 321
+               12 21
+               1 1
+            */
+      for (var i = 1; i <= 4; i++) {
+         document.write(i);
+      }
+      for (var i = 4; i >= 1; i--) {
+         document.write(i);
+      }
+      document.write("<br>");
+      for (var i = 1; i <= 3; i++) {
+         document.write(i);
+      }
+      document.write(" ");
+      for (var i = 3; i >= 1; i--) {
+         document.write(i);
+      }
+      document.write("<br>");
+      for (var i = 1; i <= 2; i++) {
+         document.write(i);
+      }
+      document.write(" ");
+      for (var i = 2; i >= 1; i--) {
+         document.write(i);
+      }
+      document.write("<br>");
+      for (var i = 1; i <= 1; i++) {
+         document.write(i);
+      }
+      document.write(" ");
+      for (var i = 1; i >= 1; i--) {
+         document.write(i);
+      }
+      document.write("<hr>");
+      /*  13)     1
+                  234
+                  56789
+               */
+      for (var i = 1; i <= 1; i++) {
+         document.write(i);
+      }
+      document.write("<br>");
+      for (var i = 2; i <= 4; i++) {
+         document.write(i);
+      }
+      document.write("<br>");
+      for (var i = 5; i <= 9; i++) {
+         document.write(i);
+      }
+      document.write("<br>");
+      document.write("<hr>");
+      /*  14)   1
+                24
+                369
+                481216
+                510152025
+                61218243036
+                7142128354249
+                816243240485664
+                91827364554637281
+                102030405060708090100
+                */
+      for (var i = 1; i <= 10; i++) {
+         for (var j = 1; j <= i; j++) {
+            document.write(j * i);
+         }
+         document.write("<br>");
+      }
+      document.write("<hr>");
+      /* 15)   12345
+               21234
+               32123
+               43212
+               54321
+            */
+      for (var i = 1; i <= 5; i++) {
+         document.write(i);
+      }
+      document.write("<br>");
+      for (var i = 2; i <= 2; i++) {
+         document.write(i);
+      }
+      for (var i = 1; i <= 4; i++) {
+         document.write(i);
+      }
+      document.write("<br>");
+      for (var i = 3; i <= 3; i++) {
+         document.write(i);
+      }
+      for (var i = 2; i >= 1; i--) {
+         document.write(i);
+      }
+      for (var i = 2; i <= 3; i++) {
+         document.write(i);
+      }
+      document.write("<br>");
+      for (var i = 4; i >= 1; i--) {
+         document.write(i);
+      }
+      for (var i = 2; i <= 2; i++) {
+         document.write(i);
+      }
+      document.write("<br>");
+      for (var i = 5; i >= 1; i--) {
+         document.write(i);
+      }
+      document.write("<br>");
+      document.write("<hr>");
+      /* 16) 1 1
+             12 21
+             123 321
+             1234 4321
+             1234554321
+      */
+      for (var i = 1; i <= 1; i++) {
+         document.write(i);
+      }
+      document.write(" ");
+      for (var i = 1; i <= 1; i++) {
+         document.write(i);
+      }
+      document.write("<br>");
+      for (var i = 1; i <= 2; i++) {
+         document.write(i);
+      }
+      document.write(" ");
+      for (var i = 2; i >= 1; i--) {
+         document.write(i);
+      }
+      document.write("<br>");
+      for (var i = 1; i <= 3; i++) {
+         document.write(i);
+      }
+      document.write(" ");
+      for (var i = 3; i >= 1; i--) {
+         document.write(i);
+      }
+      document.write("<br>");
+      for (var i = 1; i <= 4; i++) {
+         document.write(i);
+      }
+      document.write(" ");
+      for (var i = 4; i >= 1; i--) {
+         document.write(i);
+      }
+      document.write("<br>");
+      for (var i = 1; i <= 5; i++) {
+         document.write(i);
+      }
+      document.write(" ");
+      for (var i = 5; i >= 1; i--) {
+         document.write(i);
+      }
+      document.write("<hr>");
+      /* 17)   1
+               121
+               12321
+               1234321*/
+      for (var i = 1; i <= 1; i++) {
+         document.write(i + " ");
+      }
+      document.write("<br>");
+      for (var i = 1; i <= 2; i++) {
+         document.write(i + " ");
+      }
+      for (var i = 1; i <= 1; i++) {
+         document.write(i + " ");
+      }
+      document.write("<br>");
+      for (var i = 1; i <= 3; i++) {
+         document.write(i + " ");
+      }
+      for (var i = 2; i >= 1; i--) {
+         document.write(i + " ");
+      }
+      document.write("<br>");
+      for (var i = 1; i <= 4; i++) {
+         document.write(i + " ");
+      }
+      for (var i = 3; i >= 1; i--) {
+         document.write(i + " ");
+      }
+      document.write("<br>");
+      document.write("<hr>");
+
+      /*  18) 5 5 5 5 5 5 5 5 5
+              5 4 4 4 4 4 4 4 5
+              5 4 3 3 3 3 3 4 5
+              5 4 3 3 3 3 3 4 5
+              5 4 3 2 2 2 3 4 5
+              5 4 3 3 3 3 3 4 5
+              5 4 4 4 4 4 4 4 5
+              5 5 5 5 5 5 5 5 5*/
+      for (var i = 5; i <= 5; i++) {
+         //document.write(i);
+         for (var j = 1; j <= i; j++) {
+            document.write(i);
+         }
+      }
+      for (var i = 5; i <= 5; i++) {
+         document.write(i);
+      }
+      for (var i = 5; i <= 5; i++) {
+         document.write(i);
+      }
+      for (var i = 5; i <= 5; i++) {
+         document.write(i);
+      }
+      for (var i = 5; i <= 5; i++) {
+         document.write(i);
+      }
+      document.write("<br>");
+      for (var i = 5; i <= 5; i++) {
+         document.write(i);
+      }
+      for (var i = 4; i <= 4; i++) {
+         //document.write(i);
+         for (var j = 1; j <= i; j++) {
+            document.write(i);
+         }
+      }
+      for (var i = 4; i <= 4; i++) {
+         document.write(i);
+      }
+      for (var i = 4; i <= 4; i++) {
+         document.write(i);
+      }
+      for (var i = 4; i <= 4; i++) {
+         document.write(i);
+      }
+      for (var i = 5; i <= 5; i++) {
+         document.write(i);
+      }
+      document.write("<br>");
+      for (var i = 5; i <= 5; i++) {
+         document.write(i);
+      }
+      for (var i = 4; i <= 4; i++) {
+         document.write(i);
+      }
+      for (var i = 3; i <= 3; i++) {
+         //document.write(i);
+         for (var j = 1; j <= i; j++) {
+            document.write(i);
+         }
+      }
+      for (var i = 3; i <= 3; i++) {
+         document.write(i);
+      }
+      for (var i = 3; i <= 3; i++) {
+         document.write(i);
+      }
+      for (var i = 4; i <= 4; i++) {
+         document.write(i);
+      }
+      for (var i = 5; i <= 5; i++) {
+         document.write(i);
+      }
+      document.write("<br>");
+      for (var i = 5; i <= 5; i++) {
+         document.write(i);
+      }
+      for (var i = 4; i <= 4; i++) {
+         document.write(i);
+      }
+      for (var i = 3; i <= 3; i++) {
+         document.write(i);
+      }
+      for (var i = 2; i <= 2; i++) {
+         //document.write(i);
+         for (var j = 1; j <= i; j++) {
+            document.write(i);
+         }
+      }
+      for (var i = 2; i <= 2; i++) {
+         document.write(i);
+      }
+      for (var i = 3; i <= 3; i++) {
+         document.write(i);
+      }
+      for (var i = 4; i <= 4; i++) {
+         document.write(i);
+      }
+      for (var i = 5; i <= 5; i++) {
+         document.write(i);
+      }
+      document.write("<br>");
+      for (var i = 5; i <= 5; i++) {
+         document.write(i);
+      }
+      for (var i = 4; i <= 4; i++) {
+         document.write(i);
+      }
+      for (var i = 3; i <= 3; i++) {
+         //document.write(i);
+         for (var j = 1; j <= i; j++) {
+            document.write(i);
+         }
+      }
+      for (var i = 3; i <= 3; i++) {
+         document.write(i);
+      }
+      for (var i = 3; i <= 3; i++) {
+         document.write(i);
+      }
+      for (var i = 4; i <= 4; i++) {
+         document.write(i);
+      }
+      for (var i = 5; i <= 5; i++) {
+         document.write(i);
+      }
+      document.write("<br>");
+      for (var i = 5; i <= 5; i++) {
+         document.write(i);
+      }
+      for (var i = 4; i <= 4; i++) {
+         document.write(i);
+      }
+      for (var i = 4; i <= 4; i++) {
+         document.write(i);
+      }
+      for (var i = 4; i <= 4; i++) {
+         document.write(i);
+      }
+      for (var i = 4; i <= 4; i++) {
+         //document.write(i);
+         for (var j = 1; j <= i; j++) {
+            document.write(i);
+         }
+      }
+      for (var i = 5; i <= 5; i++) {
+         document.write(i);
+      }
+      document.write("<br>");
+      for (var i = 5; i <= 5; i++) {
+         //document.write(i);
+         for (var j = 1; j <= i; j++) {
+            document.write(i);
+         }
+      }
+      for (var i = 5; i <= 5; i++) {
+         document.write(i);
+      }
+      for (var i = 5; i <= 5; i++) {
+         document.write(i);
+      }
+      for (var i = 5; i <= 5; i++) {
+         document.write(i);
+      }
+      for (var i = 5; i <= 5; i++) {
+         document.write(i);
+      }
+      document.write("<br>");
+      document.write("<hr>");
+      /* 19) *
+             **
+             ***
+             ****
+             *****
+           */
+      for (var i = 1; i <= 5; i++) {
+         // console.log(i);
+         for (var j = 1; j <= i; j++) {
+            document.write("*");
+         }
+         document.write("<br>");
+      }
+      document.write("<hr>");
+      /* 20) 1****
+             12***
+             123**
+             1234*
+             12345*/
+      for (var i = 1; i <= 1; i++) {
+         document.write(i + " ");
+      }
+      for (var i = 1; i <= 1; i++) {
+         document.write("* ", "*", "*", "*");
+      }
+      document.write("<br>");
+      for (var i = 1; i <= 2; i++) {
+         document.write(i + "");
+      }
+      for (var i = 1; i <= 1; i++) {
+         document.write("* ", "*", "*");
+      }
+      document.write("<br>");
+      for (var i = 1; i <= 3; i++) {
+         document.write(i + " ");
+      }
+      for (var i = 1; i <= 1; i++) {
+         document.write("*", "*");
+      }
+      document.write("<br>");
+      for (var i = 1; i <= 4; i++) {
+         document.write(i + " ");
+      }
+      for (var i = 1; i <= 1; i++) {
+         document.write("*");
+      }
+      document.write("<br>");
+      for (var i = 1; i <= 5; i++) {
+         document.write(i + " ");
+      }
+      document.write("<hr>");
+      /* 21) #
+             ##
+             ###
+             ####
+             &&&&&
+             &&&&
+             &&&
+             &&
+             &  */
+      for (var i = 1; i <= 4; i++) {
+         // console.log(i);
+         for (var j = 1; j <= i; j++) {
+            document.write("# ");
+         }
+         document.write("<br>");
+      }
+      for (var i = 5; i >= 1; i--) {
+         // console.log(i);
+         for (var j = 1; j <= i; j++) {
+            document.write("& ");
+         }
+         document.write("<br>");
+      }
+      document.write("<hr>");
+   </script>
+</body>
+
+</html>

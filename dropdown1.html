@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>drop down</title>
+        <style>
+            body{
+                background-color:skyblue;
+            }
+            #box{
+                background-color: black;
+                width: 1000px;
+                padding: 10px;
+            }
+            #but{
+                background-color: black;
+                color: white;
+            }
+            #container{
+                background-color:black;
+                color: white;
+                position: absolute;
+                width: 150px;
+                margin-top: 10px;
+            }
+            p{
+                border: 1px solid black;
+                padding: 3px;
+            }
+            #container1{
+                background-color:black;
+                color: white;
+                position: absolute;
+                width: 150px;
+                margin-top:-37px;
+                margin-left:148px;
+            }
+            #container2{
+                background-color:black;
+                color: white;
+                position: absolute;
+                width: 150px;
+                margin-top:-37px;
+                margin-left:148px;
+            }
+            .active{
+                background-color: white;
+                color: black;
+            }
+            p:hover{
+                background-color: red;
+            }
+            #but:hover{
+                background-color: skyblue;
+            }
+            #box:hover#container{
+                display: block;
+                background-color: skyblue;
+            }
+         </style>  
+    </head>
+    <body>
+        <div id="box">
+            <button type="button"id="but">Home</button>
+            <button type="button"id="but">WordPress</button>
+            <button type="button"id="but">Web Design +
+                <div id="container">
+                    <p>Resource</p>
+                    <p>Links</p>
+                    <p>Tutorial +
+                        <div id="container1">
+                            <p>HTML/CSS</p>
+                            <p>JQuery</p>
+                            <p>outher +
+                                <div id="container2">
+                                    <p>Stuff</p>
+                                    <p>Things</p>
+                                    <p class="active">Outher Stuff</p>
+                            </div>
+                            </p>
+                    </div>
+                    </p>
+            </div>
+            </button>
+            <button type="button"id="but">Inspiration</button>
+            <button type="button"id="but">Contact</button>
+            <button type="button"id="but">About</button>
+        </div>
+    </body>
+</html>

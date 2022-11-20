@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>java script</title>
+</head>
+<body>
+    <h1 id="result"></h1>
+    <button type="button"onclick="add()">add</button>
+    <button type="button"onclick="sub()">sub</button>
+    <script>
+        function add(){
+            var firstNum=100;
+            var secondNum=20;
+            var print=firstNum + secondNum;
+            document.getElementById('result').innerHTML=print;
+        }
+        function sub(){
+            var firstNum=200;
+            var secondNum=20;
+            var print=firstNum - secondNum;
+            document.getElementById('result').innerHTML=print;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        #box{
+            height: 400px;
+            width:800px;
+            border: 1px solid black;
+            margin: auto;
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;
+            -webkit-text-stroke-width:2px;
+            -webkit-text-stroke-color: black;
+            -webkit-text-fill-color: white;
+        }
+        #left{
+            height: 250px;
+            width: 200px;
+            border: 1px solid black;
+            float: left;
+            position: relative;
+            left:50px;
+        }
+        #center{
+            height: 250px;
+            width: 200px;
+            border: 1px solid black;
+            float: left;
+            position: relative;
+            left:100px;
+        }
+        #right{
+            height: 250px;
+            width: 200px;
+            border: 1px solid black;
+            float: left;
+            position: relative;
+            left:150px;
+        }
+        ol{
+            font-size: 20px;
+        }
+        ol li{
+            position: relative;
+            top: 40px;
+            left: 30px;
+            padding: 10px;
+        }
+        .area{
+            font-size: 20px;
+            list-style-type:circle;
+        }
+        .part{
+            font-size: 20px;
+            list-style-type: square;
+        }
+        ul li{
+            position: relative;
+            top: 40px;
+            left: 30px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1>HTML Lists</h1>
+        <div id="left">
+            <ol><u>FRUITS</u>
+            <li style="background-color: orange;">Apple</li>
+            <li style="background-color: orange;">Mango</li>
+            <li style="background-color: orange;">Oranges</li>
+        </ol>
+        </div>
+        <div id="center">
+            <ul class="part"><u>VEGETABLE</u>
+                <li style="background-color: orange;">Potato</li>
+                <li style="background-color: orange;">Tomato</li>
+                <li style="background-color: orange;">Onoin</li>
+            </ul>
+        </div>
+        <div id="right">
+            <ul class="area"><u>GROCERIES</u>
+                <li style="background-color: orange;">Rice</li>
+                <li style="background-color: orange;">Flour</li>
+                <li style="background-color: orange;">Pulses</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

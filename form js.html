@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        #box{
+            height: 400px;
+            width: 400px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin: auto;
+            background-color: aqua;
+        }
+        label{
+            display: block;
+            color: darkviolet;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            margin-bottom: 30px;
+        }
+        input{
+            border-radius: 30px;
+            border: none;
+            box-shadow: 5px 5px 5px 3px lightgrey;
+            width: 300px;
+            padding: 5px;
+        }
+        input[type=submit]{
+            width: 300px;
+            padding: 5px;
+            color: white;
+            background-color: darkviolet;
+        }
+        h3{
+            color: darkviolet;
+            margin-left: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome aboard</h1>
+    <div id="box">
+        <form name="myForm" onsubmit="return validate()">
+            <ul>
+                <li>
+                    <label for="fname">Full Name</label>
+                    <input type="text"id="fname"name="fullname">
+                </li>
+                <li>
+                    <label for="mail">Email</label>
+                    <input type="email"id="mail"name="mail">
+                </li>
+                <li>
+                    <label for="pwd">Password</label>
+                    <input type="password"id="pwd"name="pwd">
+                </li>
+                <li>
+                    <input type="submit">
+                </li>
+            </ul>
+        </form>
+        <h3>Already Have an account.?</h3>
+    </div>
+    <script>
+        function validate(){
+            var full=document.myForm.fullname.value;
+            var email=document.myForm.mail.value;
+            var password=document.myForm.pwd.value;
+
+            if(full==null||full==""){
+                alert("you fill name");
+                return false;
+            }
+            else if(email==""){
+                alert("you fill email");
+                return false;
+            }
+            else if(password==""){
+                alert("please fill password");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

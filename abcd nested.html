@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>nested</title>
+</head>
+<body>
+    <script>
+        /* 1)
+        A
+        AB
+        ABC
+        ABCD
+        ABCDE */
+        var i,j;
+        for(i=65;i<=69;i++){
+            for(j=65;j<=i;j++){
+                document.write(String.fromCharCode(j));
+                document.write(" ");
+            }
+            document.write("<br>");
+        }
+        document.write("<hr>");
+        /*  2)
+           A
+           BB
+           CCC
+           DDDD
+           EEEEE */
+            var i,j;
+        for(i=65;i<=69;i++){
+            for(j=65;j<=i;j++){
+                document.write(" ",String.fromCharCode(i));
+                document.write(" ");
+            }
+            document.write("<br>");
+        }
+        document.write("<hr>");
+        /* 3)
+        A
+        AB
+        ABC
+        ABCD
+        ABCDE
+        ABCD
+        ABC
+        AB
+        A */
+        var i,j;
+        for(i=65;i<=69;i++){
+            for(j=65;j<=i;j++){
+                document.write(String.fromCharCode(j));
+            }
+            document.write("<br>");
+        }
+        var i,j;
+        for (var i = 68; i >= 65; i--) {
+         // console.log(i);
+         for (var j = 65; j <= i; j++) {
+            document.write(String.fromCharCode(j));
+         }
+         document.write("<br>");
+      }
+      document.write("<hr>");
+      /*
+      A
+      B C
+      D E F
+      G H I J
+      K L M N O
+      */
+      var i,j;
+      var count =1;
+      for (var i =65; i <=72; i++) {
+         //console.log(i);
+         for (var j =65; j <= i; j++) {
+            document.write(String.fromCharCode(j));
+            count--;
+         }
+         document.write("<br>");
+      }
+      document.write("<hr>");
+    </script>
+</body>
+</html>

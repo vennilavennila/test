@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>index</title>
+    <style>
+       #one{
+                height: 123px;
+                width: 133px;
+                border: 1px solid black;
+                background-color:coral;
+                position: relative;
+                top: 50px;
+                left: 50px;
+                animation: check 5s infinite linear;
+                z-index: 1;
+            }
+            #two{
+                height: 123px;
+                width: 133px;
+                border: 1px solid black;
+                background-color:lightskyblue;
+                position: relative;
+                top:-30px;
+                left: 82px;
+                opacity: 0.8;
+            }
+            #three{
+                height: 123px;
+                width: 133px;
+                border: 1px solid black;
+                background-color: lightskyblue;
+                position: relative;
+                top:-119px;
+                left: 118px;
+                opacity: 0.8;
+            }
+            #four{
+                height: 123px;
+                width: 133px;
+                border: 1px solid black;
+                background-color: lightskyblue;
+                position: relative;
+                top:-200px;
+                left: 152px;
+                opacity: 0.8;
+            }
+            #five{
+                height: 123px;
+                width: 133px;
+                border: 1px solid black;
+                background-color: lightskyblue;
+                position: relative;
+                top:-284px;
+                left: 184px;
+                opacity: 0.8;
+            }
+            @keyframes check{
+                50%{
+                    z-index: 5;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div id="one">my Box
+    </div>
+    <div id="two">Z-index 1
+    </div>
+    <div id="three">Z-index 2
+    </div>
+    <div id="four">Z-index 3
+    </div>
+    <div id="five">Z-index 4
+    </div>
+</body>
+</html>

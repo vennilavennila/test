@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>job form</title>
+    <style>
+        body{
+            background-image: url(./vennilak/image2/superimage/vinayagar/meeting\ Image\ 2022-08-12\ at\ 6.37.15\ PM.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #box{
+            height:500px;
+            width: 500px;
+            margin: auto;
+            background-color: rgba(0,0,0,0.3);
+            padding: 30px;
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+        input{
+            display: block;
+            background-color: black;
+            color: white;
+            width: 300px;
+            padding: 5px;
+            border: none;
+            margin-top: 10px;
+        }
+        
+        select{
+            display: block;
+            background-color: black;
+            color: white;
+            width: 150px;
+            padding: 5px;
+            border: none;
+        }
+        .emper{
+            display: inline;
+        }
+        label{
+            color: white;
+            display: block;
+        }
+        .mybutton{
+            display: block;
+            background-color: skyblue;
+            color: white;
+            border: none;
+            padding: 5px;
+            width: 80px;
+            margin-left: 30px;
+        }
+        .yourbutton{
+            background-color: skyblue;
+            color: white;
+            border: none;
+            padding: 5px;
+            width: 80px;
+            float: right;
+            margin-right: 42px;
+        }
+        .name::after{
+            content: "*";
+            color: skyblue;
+        }
+        .mail::after{
+            content: "*";
+            color: skyblue;
+        }
+        .num::after{
+            content: "*";
+            color: skyblue;
+        }
+        .cont::after{
+            content: "*";
+            color: skyblue;
+        }
+        .job::after{
+            content: "*";
+            color: skyblue;
+        }
+        .emp::after{
+            content: "*";
+            color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>CLASSY JOB APPLICATION FORM</h1>
+    <div id="box">
+        <form>
+            <label for="name"class=name>Name</label>
+            <input type="text"id="name"name="name"value="Name">
+            <label for="mail"class="mail">Email</label>
+            <input type="email"id="email"name="email"value="Mail@gmail.com">
+            <label for="num"class="num">Phone</label>
+            <input type="num"id="num"name="num"value="phone">
+            <label for="country"class="cont">Country</label>
+            <select id="country"name="country">
+                <option value="india">Select Country</option>
+                <option value="usa">Usa</option>
+                <option value="africa">Africa</option>
+            </select>
+            <label for="job"class="job">What Position Are You Applying For?</label>
+            <select id="job"name="job">
+                <option value="job">Job-1</option>
+                <option value="job">Job-2</option>
+                <option value="job">Job-3</option>
+            </select>
+            <label for="emp"class="emp">What is Your Current Employment Status?</label>
+            <input type="radio"id="emp"name="emp"value="employed">
+            <label for="emp"class="emper">Employed</label>
+            <input type="radio"id="emp"name="emp"value="unemployed">
+            <label for="emp"class="emper">unemployed</label>
+            <input type="radio"id="emp"name="emp"value="employed">
+            <label for="emp"class="emper">self-Employed</label>
+            <input type="radio"id="emp"name="emp"value="employed">
+            <label for="emp"class="emper">Student</label>
+            <label for="resume">Upload Your Resume</label>
+            <button type="button"class="mybutton">Upload</button>
+            <button type="button"class="yourbutton">Send</button>
+        </form>
+    </div>
+</body>
+</html>

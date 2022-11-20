@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Iframe</title>
+        <style>
+            body{
+                background-color:dodgerblue;
+            }
+             #container{
+                height:500px;
+                width:500px;
+                border: 10px solid white;
+                box-sizing: border-box;
+                margin: auto;background-color: white;
+            }
+            #top{
+                height:140px;
+                width:471px;
+                border:5px solid white;
+                background-color: greenyellow;
+            }
+            #middle{
+                height:210px;
+                width:475px;
+                border:3px solid white;
+            }
+        #bottom{
+                height:111px;
+                width:475px;
+                border:3px solid white;
+                background-color:white;
+           }
+        #left{
+                height:205px;
+                width:150px;
+                border:3px solid white;
+                background-color:skyblue;
+                float: left;
+          }
+        #center{
+            height: 205px;
+            width: 150px;
+            border: 3px solid white;
+            background-color: skyblue;
+            float: left;
+
+          }
+        #right{
+                height:205px;
+                width:156px;
+                border: 3px solid white;
+                background-color: skyblue;
+                float: left;
+         }
+         #leftpart{
+                height:106px;
+                width:233px;
+                border:3px solid white;
+                float: left;
+          }
+        #rightpart{
+                height:105px;
+                width:230px;
+                border: 3px solid white;
+                float: left;
+         }
+         #leftarea{
+                height:105px;
+                width:110px;
+                border:3px solid white;
+                float: left;
+                background-color: silver;
+          }
+        #rightarea{
+                height:105px;
+                width:108px;
+                border: 3px solid white;
+                float: left;
+                background-color: silver;
+         }
+         #leftsection{
+                height:105px;
+                width:110px;
+                border:3px solid white;
+                float: left;
+                background-color: silver;
+          }
+        #rightsection{
+                height:105px;
+                width:111px;
+                border: 3px solid white;
+                float: left;
+                background-color: silver;
+         }
+         @media only screen and (max-width:568px){
+        #left{
+            height:50px;
+            width: 150px;
+            background-color:skyblue;
+        }
+        #center{
+            width:150px;
+            height: 50px;
+            background-color: skyblue;
+        }
+        #right{
+            height: 50px;
+            width:150px;
+            background-color: skyblue;
+        }
+    }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="top"></div>
+            <div id="middle">
+                <div id="left"></div>
+                <div id="center"></div>
+                <div id="right"></div>
+            </div>
+            <div id="bottom">
+                <div id="leftpart">
+                    <div id="leftsection"></div>
+                    <div id="rightsection"></div>
+                </div>
+                <div id="rightpart">
+                    <div id="leftarea"></div>
+                    <div id="rightarea"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

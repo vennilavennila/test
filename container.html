@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>div</title> 
+        <style>
+            #container{
+                height:500px;
+                width:500px;
+                border:2px solid black;
+                margin:auto;
+            }
+            #top{
+                height:100px;
+                width:500px;
+                border: 2px solid black;
+                background-color: aqua;
+                text-align: center;
+            }
+            #middle{
+                height:300px;
+                width:500px;
+                border: 2px solid black;
+            }
+            #bottom{
+                height:100px;
+                width:500px;
+                text-align:center;
+                background-color:greenyellow;
+                border: 2px solid black;
+             }
+            #leftpart{
+                height:300px;
+                width: 100px;
+                border: 2px solid black;
+                background-color:slategray;
+                float: left;
+            }
+            #centerpart{
+                height:300px;
+                width:300px;
+                border: 2px solid black;
+                float: left;
+                text-align: center;
+            }
+            #rightpart{
+                height:300px;
+                width:86px ;
+                border: 2px solid black;
+                background-color: bisque;
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="top">
+                <h1>header</h1>
+            </div>
+            <div id="middle">
+                <div id="leftpart">
+                    <h1>left</h1>
+                </div>
+                <div id="centerpart">
+                    <h1 text-align:center>body</h1>
+                </div>
+                <div id="rightpart">
+                    <h1>right</h1>
+                </div>
+            </div>
+            <div id="bottom">
+                <h1>footer</h1>
+            </div>
+        </div>
+    </body>
+</html>
+            

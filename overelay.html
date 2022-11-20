@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>overelay</title>
+        <style>
+            #box{
+                height: 400px;
+                width: 400px;
+                position: relative;
+            }
+            h1{
+                font-size: 40px;
+            }
+            h2{
+                font-size: 30px;
+            }
+            #overelay{
+                background-color: purple;
+                height:400px;
+                width:0px;
+                transition: 3s ease;
+                opacity:0.5;
+                position: absolute;
+                top:0;
+                left: 100%;
+                right:0;
+                
+            }
+            #box:hover #overelay{
+                width:400px;
+                left:0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Overelay slide from bottom to top</h1>
+        <h2>Point the cursor on the image to feel the effort.</h2>
+        <div id="box">
+            <img src="./vennilak/image1/happy/flower-photo-736230.webp"height="400px"width="400px"alt="flower">
+            <div id="overelay"></div>
+        </div>
+    </body>
+</html>

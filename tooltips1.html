@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tool tips</title>
+        <style>
+            body{
+                background-color: darkblue;
+            }
+            #box{
+                height: 30px;
+                width: 400px;
+                background-color:orange;
+                color: white;
+                text-align: center;
+                position: relative;
+                top: 30px;
+                left: 30px;
+                padding: 5px;
+            }
+            #box #text{
+                background-color: white;
+                color: black;
+                position: absolute;
+                top:50px;
+                left: 143px;
+                border-radius: 10px;
+                padding: 10px;
+
+            }
+            #text::before{
+                content: " ";
+                border-width: 10px;
+                border-style: solid;
+                border-color:transparent transparent white transparent;
+                position: absolute;
+                top:-20px;
+                left:56px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">Say Hi to AboutReact
+            <span id="text">Hello! AboutReact</span>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>div</title>
+    <style>
+        #box{
+            height: 400px;
+            width: 1000px;
+            margin: auto;
+        }
+        #top{
+            height: 50px;
+            width: 999px;
+            background-image: conic-gradient(from 20deg,yellowgreen,white);
+        }
+        #bottom{
+            height: 348px;
+            width: 999px;
+            border: 1px solid black;
+            background-image: url(./vennilak/image/green\ flower.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+        #top1{
+            height: 49px;
+            width: 485px;
+            float: left;
+            background-color: white;
+            font-size: 20px;
+        }
+        #top2{
+            height: 49px;
+            width:500px;
+            float: left;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        h6{
+            color:yellowgreen;
+            margin-top: 73px;
+        }
+        h1{
+            color:white
+        }
+        input[type=button]{
+            background-color: yellowgreen;
+            border: none;
+            padding: 5px;
+            color: white;
+        }
+        input[type=newbutton]{
+            background-color: transparent;
+            border: 1px solid white;
+            padding: 5px;
+            color: white;
+        }
+        #left{
+            height: 50px;
+            width: 50px;
+            float: left;
+            margin-top: -20px;
+            margin-left: 40px;
+        }
+        #right{
+            height: 50px;
+            width: 50px;
+            float:right;
+            margin-top: -20px;
+            margin-right:40px;
+        }
+        #left1{
+            height: 30px;
+            width: 30px;
+            margin: 5px;
+        }
+        #right1{
+            height: 30px;
+            width: 30px;
+            margin: 5px;
+        }
+        #left1::before{
+            content: " ";
+            border-width: 10px;
+            border-style: solid;
+            border-color:transparent white transparent transparent;
+        }
+        #right1::before{
+            content: " ";
+            border-width: 10px;
+            border-style: solid;
+            border-color:transparent transparent transparent white;
+        }
+       #area{
+        height: 300px;
+        width: 200px;
+        border: 1px solid black;
+        float: left;
+        margin-left:300px;
+        margin-top: 20px;
+       }
+       #area1{
+        height: 300px;
+        width: 200px;
+        float: left;
+        margin-top: 20px;
+        margin-left: 30px;
+       }
+       #area2{
+        height: 300px;
+        width: 200px;
+        float: left;
+        margin-top: 20px;
+        margin-left: 30px;
+       }
+       #area3{
+        height: 300px;
+        width: 200px;
+        float: left;
+        margin-top: 20px;
+        margin-left: 30px;
+       }
+       span{
+        color: yellowgreen;
+       }
+       img{
+        padding-left: 25px;
+       }
+       h3{
+        padding: 5px;
+       }
+       p{
+        padding: 5px;
+       }
+    </style>
+</head>
+<body>
+   <div id="box">
+    <div id="top">
+        <div id="top1">
+            <img src="./vennilak/image1/happy/VIC logo Image 2022-09-07 at 8.52.32 PM.jpeg"height="50"width="50"alt="logo">
+              VIC Turf &
+            Landscaps Solution
+        </div>
+        <div id="top2">
+            <a href="#home">Home</a>
+            <a href="#about us">About Us</a>
+            <a href="#service">Services</a>
+            <a href="#blog">Blog</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div id="bottom">
+        <h6>QUALITY THAT IS GUARANTEED</h6>
+        <h1>Your Lawn and landscape<br>
+        cared for the way they should be</h1>
+        <input type="button"value="MORE ABOUT US">
+        <input type="newbutton"value="GET IN TOUCH">
+        <div id="left">
+            <div id="left1"></div>
+        </div>
+        <div id="right">
+            <div id="right1"></div>
+        </div>
+    </div>
+   </div> 
+   <div id="area">
+    <h2>Exceptional<br>
+    <span>Service We Offer</span></h2><hr>
+    <p>We provide exceptional Melboume
+        Landscaping services to a wide range of commercial and residential properties and have more than 10 years experience.Our experienced Landscaping set the standard shape in no time.
+    </p>
+   </div>
+   <div id="area1">
+    <img src="./vennilak/image/tree-276014_960_720.jpg"height="100"width="150"alt="tree">
+    <h3>Lawn,Turf & Garden Care</h3>
+    <p>Lawns that shine all year round. When it comes to your lawn care,We have some of vicoria top experts in lawns</p>
+   </div>
+   <div id="area2">
+    <img src="./vennilak/image1/happy/flower-photo-736230.webp"height="100"width="150"alt="tree">
+    <h3>Planting & REmoval</h3>
+    <p>We provide exceptional Melboume
+        Landscaping services to a wide range of commercial and residential properties and have more than 10 years experience.Our experienced Landscaping set the standard shape in no time.
+    </p>
+   </div>
+   <div id="area3">
+    <img src="./vennilak/image2/superimage/vinayagar/flower Image 2022-08-18 at 5.47.22 PM.jpeg"height="100"width="150"alt="tree">
+    <h3>Irrigation & Drainage</h3>
+    <p>Lawns that shine all year round. When it comes to your lawn care,We have some of vicoria top experts in lawns</p>
+   </div>
+</body>
+</html>

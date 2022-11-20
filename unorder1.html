@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>un order</title>
+        <style>
+            ol{
+                list-style-type: none;
+                counter-reset:list;
+            }
+            li::before{
+                counter-increment: list;
+                content: counters(list, ".") " ";
+            }
+            #box{
+                height: 250px;
+                width: 400px;
+                border: 1px solid lightgray;
+                background-color: white;
+            }
+             body{
+                background-color:lightgray;
+             }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+         <ol>
+            <li>item</li>
+            <li>item
+                <ol>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item
+                        <ol>
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                        </ol>
+                    </li>
+                    <li>item</li>
+                </ol>
+            </li>
+            <li>item</li>
+            <li>item</li>
+         </ol>
+        </div>
+    </body>
+</html>

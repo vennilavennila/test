@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>array</title>
+</head>
+<body>
+   <script>
+    //1.reversing the array:
+    var numbers=[1,2,3,4];
+    var reverse=numbers.reverse();
+    console.log(reverse);
+
+    //3.remove mango in this array:
+    var fruits=["Apple","Orange","Lemon","Mango"];
+    console.log(fruits.splice(3));
+    console.log(fruits);
+
+    //4.remove apple in this array:
+     var fruits=["Apple","Orange","Lemon","Mango"];
+    console.log(fruits.splice(0,1));
+    console.log(fruits);
+
+     //7.orange & lemon in this array:
+     var fruits=["banana","orange","apple","mango","lemone"];
+    console.log(fruits.includes("orange","lemon"));
+    
+    //8.arrange albhabetic order:
+     var letter=["d","c","e","a","o","b"];
+    console.log(letter.sort());
+
+    //10.apple in this array:
+    var fruits=["banana","orange","apple","mango","lemone"];
+    console.log(fruits.includes("apple"));
+
+    //11.acending order:
+    var numbers=[20,40,5,6,1,300];
+    numbers.sort(function(a,b){return a-b});
+    console.log(numbers);
+    
+    //12.decending order:
+    var numbers=[20,40,5,6,1,300];
+    numbers.sort(function(a,b){return b-a});
+    console.log(numbers);
+   </script> 
+</body>
+</html>

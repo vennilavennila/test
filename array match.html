@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>array</title>
+</head>
+<body>
+   <script>
+    //match:
+      var string=["apple","lemon","orange","mango"];
+      var test=["apple"];
+      var print=(string>=test)?"yes it is match":"no it is match";
+      console.log(print);
+
+      var string=["apple","lemon","orange","mango"];
+      var test=["grapse"];
+      var print=(string>=test)?"yes it is match":"no it is match";
+      console.log(print);
+
+    //ascending order number :
+    var numbers=[5,3,8,1,4,2,7,9,6];
+    numbers.sort(function(a,b){return a-b});
+    console.log(numbers);
+
+    //ascending order alphabet  :
+    var string=["a","c","e","m","o","b"];
+    string.sort();
+    console.log(string);
+
+    //decending order number :
+    var numbers=[5,3,8,1,4,2,7,9,6];
+    numbers.sort(function(a,b){return b-a});
+    console.log(numbers);
+
+     //desenting order alphabet :
+     var string=["a","c","e","m","o","b"];
+     string.sort();
+    console.log(string);
+    string.reverse();
+    console.log(string);
+   </script> 
+</body>
+</html>

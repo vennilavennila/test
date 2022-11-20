@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tool tips</title>
+        <style>
+            #box{
+                text-decoration: underline black dashed 2px;
+                position: relative;
+                top:50px; 
+                left: 100px;
+            }
+            #box #text{
+                background-color: black;
+                height: 50px;
+                width:200px;
+                color: white;
+                padding: 10px;
+                border-radius: 10px;
+                position: absolute;
+                top:-8px;
+                left:126px;
+                text-align: center;
+            }
+            #text::before{
+                content: " ";
+                border-width: 10px;
+                border-style: solid;
+                border-color:transparent black transparent transparent;
+                position: absolute;
+                top: 20px;
+                left: -20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">Hover Over me!
+            <span id="text">Thanks for hovering! I'm a tooltip</span>
+        </div>
+    </body>
+</html>

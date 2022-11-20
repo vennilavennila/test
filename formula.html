@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>formula</title>
+</head>
+<body>
+    <h1>(a+b)2=a2+2ab+b2</h1>
+    <script>
+        function add(a,b){
+            var LHS=(a+b)**2;
+            console.log(LHS)
+            var RHS=(a**2)+(b**2)+(2*a*b);
+            console.log(RHS);
+            var result=(LHS==RHS)?"hence proved":"statement wrong";
+            console.log(result);
+        }
+        add(5,10)
+    </script>
+</body>
+</html>

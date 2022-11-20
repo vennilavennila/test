@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>div</title>
+        <style>
+            #container{
+                height: 600px;
+                width: 1500px;
+                border-width: 1px;
+                border-style: solid;
+                border-color: black;
+            }
+            #header{
+                height: 50px;
+                width: 1500px;
+                border-width: 1px;
+                border-color: black;
+                border-style: solid;
+                background-color: goldenrod;
+            }
+            #footer{
+                height: 548px;
+                width: 1500px;
+                border-color: black;
+                border-width: 1px;
+                border-style: solid;
+            }
+            #left{
+                height: 547px;
+                width: 300px;
+                border-color: black;
+                border-width: 1px;
+                border-style: solid;
+                float: left;
+            }
+            #right{
+                height: 547px;
+                width: 1196px;
+                border-color: black;
+                border-width: 1px;
+                border-style: solid;
+                float: left;
+            }
+            #top{
+                height: 47px;
+                width: 299px;
+                border-color:black;
+                border-width: 1px;
+                border-style: solid;
+                background-color: black;
+            }
+            #bottom{
+                height: 498px;
+                width: 299px;
+                border-color: black;
+                border-width: 1px;
+                border-style: solid;
+                background-color: mistyrose;
+            }
+            h2{
+                color: white;
+                text-align: center;
+            }
+            a{
+                color: black;
+            }
+            form{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <form>
+                    <input type="search" id="search" name="search" maxlength="5">
+                </form>
+            </div>
+            <div id="footer">
+                <div id="left">
+                    <div id="top">
+                        <h2>Categories</h2>
+                    </div>
+                    <div id="bottom">
+                        <a href="./container.html">Clotching</a><br>
+                        <a>Coats</a><br>
+                        <a>Suits</a><br>
+                        <a>Jackets</a>
+                        <form>
+                            <input type="checkbox"id="more"name="show"value="show more">
+                            <label for="more">Show more</label>  
+                        </form>
+                        <a href="./container.html">Electronic Devices</a><br>
+                        <a>Computers & Accessories</a><br>
+                        <a>TV</a><br>
+                        <a>Phones & Accessories</a>
+                        <form>
+                            <input type="checkbox"id="more"name="show"value="show more">
+                            <label for="more">Show more</label>  
+                        </form>
+                    </div>
+                </div>
+                <div id="right">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

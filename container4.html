@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>div</title>
+        <style>
+            body{
+                background-color: black;
+            }
+            #container{
+                height: 600px;
+                width:1000px;
+                border: 2px solid white;
+                margin: auto;
+             }
+             #top{
+                height:98px;
+                width:992px;
+                border: 4px solid white;
+                background-color: aqua;
+             }
+             #middle{
+                height:400px;
+                width:992px;
+                border: 4px solid white;
+             }
+             #bottom{
+                height:78px;
+                width:992px;
+                border: 4px solid white;
+                background-color:orange ;
+             }
+             #left{
+                height:400px;
+                width: 200px;
+                border: 4px solid white;
+                float: left;
+                background-color:greenyellow;
+             }
+             #right{
+                height: 400px;
+                width:776px; 
+                border: 4px solid white;
+                float: left;
+             }
+             #upper{
+                height:300px;
+                width:770px;
+                border:4px solid white;
+                background-color:gold;
+                float: left;
+             }
+             #lower{
+                height:86px;
+                width:770px;
+                border:4px solid white;
+                float:left;
+                background-color:slategrey;
+             }
+             h2{
+                text-align: center;
+                color: white;
+             }
+               </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="top">
+                <h2>Header</h2>
+            </div>
+            <div id="middle">
+                <div id="left">
+                    <h2>Sidebar</h2>
+                </div>
+                <div id="right">
+                    <div id="upper">
+                        <h2>Main Content</h2>
+                    </div>
+                    <div id="lower">
+                        <h2>Extra Content</h2>
+                    </div>
+                </div>
+            </div>
+            <div id="bottom">
+                <h2>Footer</h2>
+            </div>
+
+        </div>    
+    </body>
+</html>

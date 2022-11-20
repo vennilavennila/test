@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>mul matrix</title>
+</head>
+<body>
+    <script>
+        var matrixA=[[2,0],[1,9]];
+        var matrixB=[[3,9],[4,7]];
+        var rowA=matrixA.length;
+        console.log(rowA);
+        var colA=matrixA[0].length;
+        console.log(colA);
+        var rowB=matrixB.length;
+        console.log(rowB);
+        var colB=matrixB[0].length;
+        console.log(colB);
+        if(rowA==rowB & colA==colB){
+            console.log("rowa==rowb");
+            for(var i=0;i<rowA;i++){
+                for(var j=0;j<rowB;j++){
+                    var mul=" ";
+                    mul=matrixA[i][j] * matrixB[i][j];
+                    document.write(mul);
+                }
+                document.write("<br>");
+            }
+        }
+        else{
+            console.log("row and col not equal");
+        }
+    </script>
+</body>
+</html>

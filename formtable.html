@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+        <style>
+            #container{
+                height:600px;
+                width: 700px;
+                border:1px solid black;
+                margin: auto;
+            }
+            #left{
+                height: 600px;
+                width: 350px;
+                border: 1px solid black;
+                background-color: blue;
+                float: left;
+            }
+            #right{
+                height: 600px;
+                width: 348px;
+                border: 1x solid black;
+                float:right;
+            }
+            h2{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="left">
+                    <img src="./../vennilak/image1/happy/download.jfif"height="200"width="200"alt="happy">
+                    <h2>REGISTRATION</h2>
+            </div>
+            <div id="right">
+                <form>
+                    <ul>
+                        <label for="name">Name</label>
+                        <input type="text"id="name"name="name">
+                    </ul>
+                    <ul>
+                        <label for="uname">User Name</label>
+                        <input type="text"id="uname"name="uname">
+                    </ul>
+                    <ul>
+                        <label for="mailid">Gmail</label>
+                        <input type="email"id="mailid"name="mailid">
+                    </ul>
+                    <ul>
+                        <label for="num">Phone No</label>
+                        <input type="number"id="num"name="num">
+                    </ul>
+                    <ul>
+                        <label for="gender">Gender</label>
+                        <select id="gender"name="gender"maxlength="5">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </ul>
+                    <ul>
+                        <label for="dob">Date Of Birth</label>
+                        <input type="dob"id="dob"name="dob">
+                    </ul>
+                    <ul>
+                        <label for="pwd">Password</label>
+                        <input type="pwd"id="pwd"name="pwd">
+                    </ul>
+                    <ul>
+                        <label for="address">address</label>
+                        <textarea style="height:50px;width:100px"></textarea>
+                    </ul>
+                    <ul>
+                        <label for="utype">User Type</label>
+                        <select id="utype"name="utype">
+                            <option value="admin">Admin</option>
+                            <option value="user">User</option>
+                        </select>
+                    </ul>
+                    <input type="submit"value="REGISTER">
+                    <input type="submit"value="CANCEL">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

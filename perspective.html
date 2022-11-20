@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>Div</title>
+    <style>
+        #parent{
+            height: 300px;
+            width: 300px;
+            border: 3px solid red;
+            margin: auto;
+            margin-top: 50px;
+            perspective: 200px;
+            animation: move 3s 2s;
+        }
+        #child{
+            height: 0;
+            width: 100px;
+            border-bottom: 138px solid red;
+            border-left:109px solid transparent;
+            border-right:106px solid transparent;
+            padding: 10px;
+            transform: rotatey(5deg);
+        }
+        h2{
+            margin-top: 40px;
+        }
+        @keyframes move{
+            50%{
+                perspective: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+            <h2>HELLO</h2>
+        </div>
+    </div>
+</body>
+</html>

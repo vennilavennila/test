@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>java script</title>
+    <style>
+        #box{
+            height: 300px;
+            width: 400px;
+            border: 1px solid red;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <ul id="result">MY DETAILS
+            <li id="textone"></li>
+            <li id="texttwo"></li>
+            <li id="textthree"></li>
+            <li id="textfour"></li>
+            <li id="textfive"></li>
+            <li id="textsix"></li>
+            <li id="textseven"></li>
+            <li id="texteight"></li>
+        </ul>
+        <script>
+            var MyDetail = {
+                firstName: 'vennila',
+                secondName: "k",
+                age: 21,
+                degree: 'BSC',
+                address: 'avudaiyalpuram',
+                hobbies:'singing',
+                fatherName:'krishna kumar',
+                motherName:'thanga pappa'
+            }
+            console.log(MyDetail);
+            document.getElementById('textone').innerHTML = "firstName" + " :  " + MyDetail.firstName;
+            document.getElementById('texttwo').innerHTML = "secondName" + "   :  " + MyDetail.secondName;
+            document.getElementById('textthree').innerHTML = "age" + "   :  " + MyDetail.age;
+            document.getElementById('textfour').innerHTML = "degree" + "   :  " + MyDetail.degree;
+            document.getElementById('textfive').innerHTML = "address" + "   :  " + MyDetail.address;
+            document.getElementById('textsix').innerHTML = "hobbies" + "   :  " + MyDetail.hobbies;
+            document.getElementById('textseven').innerHTML = "fatherName" + "   :  " + MyDetail.fatherName;
+            document.getElementById('texteight').innerHTML = "motherName" + "   :  " + MyDetail.motherName;
+        </script>
+    </div>
+</body>
+
+</html>

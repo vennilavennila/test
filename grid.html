@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>grid</title>
+    <style>
+        #box{
+            background-color:grey;
+            padding:10px;
+            display: grid;
+            gap: 30px;
+            grid-template-columns:auto auto auto;
+        }
+        #box>div{
+            background-color: mediumaquamarine;
+            padding: 30px;
+        }
+        .first{
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        .second{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .thirth{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        h1{
+            color: gray;
+            margin-top:171px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="first">
+            <h1>Flexbox</h1>
+        </div>
+        <div class="second"></div>
+        <div></div>
+        <div></div>
+        <div class="thirth"></div>
+    </div>
+</body>
+</html>

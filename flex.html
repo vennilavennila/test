@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <title>flex</title>
+    <style>
+        #box{
+            height: 500px;
+            width:1000px;
+            margin: auto;
+        }
+        #top{
+            height: 50px;
+            width:999px;
+            color: white;
+            background-color: darkmagenta;
+            text-align: center;
+            font-size: 30px;
+        }
+        #bottom{
+            height:448px;
+            width:999px;
+            display:flex;
+        }
+        #bottom>div{
+            background-color: aqua;
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="top">Sample flexbox example</div>
+        <div id="bottom">
+            <div>
+                <h3>First article</h3>
+                <p>These days, just having a website <br>
+                 enough. Because of stiff competition, <br>
+                 owners find themselves having to do <br>
+                 takes to sustain a certain level of with <br>
+                 their target clients. This can come in <br>
+                  business blog, an informal way which <br>
+                  connect with your clients in a safe.</p>
+            </div>
+            <div>
+                <h3>Second article</h3>
+                <p>Boosting and encouraging use of<br>
+                 energy efficiency technologies would<br>
+                 lead to reduced energy needs for <br>
+                 heating, and cooling of homes,<br>
+                  and industries. This would be effective <br>
+                  reducing global warming as the <br>
+                  largely contributed to by the energy </p>
+            </div>
+            <div>
+                <h3>Third article</h3>
+                <p>These days, just having a website <br>
+                    enough. Because of stiff competition, <br>
+                    owners find themselves having to do <br>
+                    takes to sustain a certain level of with <br>
+                    their target clients. This can come in <br>
+                     business blog, an informal way which <br>
+                     connect with your clients in a safe.</p>
+                     <p>Boosting and encouraging use of<br>
+                        energy efficiency technologies would<br>
+                        lead to reduced energy needs for <br>
+                        heating, and cooling of homes,<br>
+                         and industries. This would be effective <br>
+                         reducing global warming as the <br>
+                         largely contributed to by the energy </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

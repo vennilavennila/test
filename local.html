@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>local</title>
+    <style>
+        #box{
+            height: 300px;
+            width: 400px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1 id="demo"></h1>
+        <ul id="result">MY DETAILS
+            <li id="textone"></li>
+            <li id="texttwo"></li>
+            <li id="textthree"></li>
+            <li id="textfour"></li>
+            <li id="textfive"></li>
+            <li id="textsix"></li>
+            <li id="textseven"></li>
+            <li id="texteight"></li>
+            <li id="textnine"></li>
+            <li id="textten"></li>
+        </ul>
+    </div>
+    <script>
+         var name="Vennila";
+        localStorage.setItem("FirstName",name);
+        var Sname="K";
+        localStorage.setItem("Second Name",Sname);
+        var area="Avudaiyalpuram";
+        localStorage.setItem("Village",area);
+        var DOB="30-05-2002";
+        localStorage.setItem("Date Of Birth",DOB);
+        var deg="BSC";
+        localStorage.setItem("Degree",deg);
+        var sex="Female";
+        localStorage.setItem("Sex",sex);
+        var religion="Hindu";
+        localStorage.setItem("Religion",religion);
+        var status="Unmarried";
+        localStorage.setItem("Status",status);
+        var lan="English,Tamil";
+        localStorage.setItem("Language",lan);
+        var skill="HTML,CSS,JAVASCRIPT";
+        localStorage.setItem("Skill",skill);
+        var myData=localStorage.getItem('FirstName');
+        document.getElementById('textone').innerHTML= "FirstName" +" :  " +myData;
+        var myData=localStorage.getItem('Second Name');
+        document.getElementById('texttwo').innerHTML= "Second Name" +" :  " +myData;
+        var myData=localStorage.getItem('Village');
+        document.getElementById('textthree').innerHTML= "Village" +" :  " +myData;
+        var myData=localStorage.getItem('Date Of Birth');
+        document.getElementById('textfour').innerHTML= "Date Of Birth" +" :  " +myData;
+        var myData=localStorage.getItem('Degree');
+        document.getElementById('textfive').innerHTML= "Degree" +" :  " +myData;
+        var myData=localStorage.getItem('Sex');
+        document.getElementById('textsix').innerHTML= "Sex" +" :  " +myData;
+        var myData=localStorage.getItem('Religion');
+        document.getElementById('textseven').innerHTML= "Religion" +" :  " +myData;
+        var myData=localStorage.getItem('Status');
+        document.getElementById('texteight').innerHTML= "Status" +" :  " +myData;
+        var myData=localStorage.getItem('Language');
+        document.getElementById('textnine').innerHTML= "Language" +" :  " +myData;
+        var myData=localStorage.getItem('Skill');
+        document.getElementById('textten').innerHTML= "Skill" +" :  " +myData;
+    </script>
+</body>
+</html>

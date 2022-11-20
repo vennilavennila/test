@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+<style>
+    #container {
+        height: 600px;
+        width: 500px;
+        border: 1px solid black;
+        margin: auto;
+        box-shadow: 5px 5px 5px black;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    li {
+        list-style-type: none;
+        margin-bottom: 20px;
+    }
+    label{
+        display: block;
+    }
+
+    input {
+        height: 30px;
+        width: 350px;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+    }
+
+    h2 {
+        color: black;
+    }
+    input[type=submit]{
+        background-color: blue;
+        color: white;
+        margin-top: 30px;
+    }
+    #one,#two,#three,#four{
+        color: red;
+        font-size: small;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <form onsubmit="return validate()">
+            <h1>Register With Us</h1>
+            <ul>
+                <li>
+                    <label for="uname">Username</label>
+                    <input type="text"placeholder="Enter username" id="uname" name="username">
+                </li>
+                <li id="one"></li>
+                <li>
+                    <label for="mailid">Email</label>
+                    <input type="email"placeholder="Enter email"id="mailid"name="mailid">
+                </li>
+                <li id="two"></li>
+                <li>
+                    <label for="pwd">Password</label>
+                    <input type="password"placeholder="Enter password" id="pwd" name="pwd">
+                </li>
+                <li id="three"></li>
+                <li>
+                    <label for="confirm">ConfirmPassword</label>
+                    <input type="password"placeholder="Enter password again" id="confirm" name="confirmpassword">
+                </li>
+                <li id="four"></li>
+                <li>
+                    <input type="submit">
+                </li>
+            </ul>
+
+        </form>
+    </div>
+    <script>
+         function validate(){
+            var user=document.getElementById('uname').value;
+            var email=document.getElementById('mailid').value;
+            var password=document.getElementById('pwd').value;
+            var ConfirmPassword=document.getElementById('confirm').value;
+
+            if(user===""){
+                document.getElementById("one").innerHTML="Name must be fill"
+                document.getElementById('uname').style.border='2px solid red';
+                return false;
+            }
+           else{
+            document.getElementById("one").style.display='none'
+            document.getElementById('uname').style.border='2px solid green';
+           }
+           if(email==""){
+                document.getElementById("two").innerHTML="Email must be fill"
+                document.getElementById('mailid').style.border='2px solid red';
+                return false;
+            }
+           else{
+            document.getElementById("two").style.display='none'
+            document.getElementById('mailid').style.border='2px solid green';
+           }
+           if(password==""){
+                document.getElementById("three").innerHTML="password must be fill"
+                document.getElementById('pwd').style.border='2px solid red';
+                return false;
+            }
+           else{
+            document.getElementById("three").style.display='none'
+            document.getElementById('pwd').style.border='2px solid green';
+           }
+           if(ConfirmPassword==""){
+                document.getElementById("four").innerHTML="confirm password must"
+                document.getElementById('confirm').style.border='2px solid red';
+                return false;
+            }
+           else{
+            document.getElementById("four").style.display='none'
+            document.getElementById('confirm').style.border='2px solid green';
+           }
+        }
+    </script>
+</body>
+
+</html>

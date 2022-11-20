@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>box</title>
+        <style>
+            #one{
+                height: 200px;
+                width: 200px;
+                border: 1px solid orange;
+                background-color: yellow;
+                position: relative;
+                top: 50px;
+                left: 50px;
+                z-index: -2;
+            }
+            #two{
+                height: 200px;
+                width: 200px;
+                border: 1px solid orange;
+                background-color:lightskyblue;
+                position: relative;
+                top:-50px;
+                left: 150px;
+                z-index: -1;
+            }
+            #three{
+                height: 200px;
+                width: 200px;
+                border: 1px solid orange;
+                background-color: plum;
+                position: relative;
+                top:-130px;
+                left: 250px;
+                z-index: 0;
+            }
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="one">
+            <h1>one</h1>
+        </div>
+        <div id="two">
+            <h1>two</h1>
+        </div>
+        <div id="three">
+            <h1>three</h1>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>add</title>
+</head>
+<body>
+    <script>
+         /////   [[3,2],[1],[4,12]]
+         var number= [[3,2],[1],[4,12]];
+         var array=[...number[0],...number[1],...number[2]];
+         console.log(array);
+         var print=array.reduce(add);
+         function add(total,value){
+            return total+value;
+         }
+         document.write("Addition Number"+" - "+print);
+    </script>
+</body>
+</html>

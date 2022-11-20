@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>formula</title>
+</head>
+<body>
+    <h1>(a+b-c)2=a2+b2+c2+2ab-2bc-2ca</h1>
+    <script>
+        function add(a,b,c){
+            var LHS=(a+b-c)**2;
+            console.log(LHS)
+            var RHS=(a**2)+(b**2)+(c**2)+(2*a*b)-(2*b*c)-(2*c*a);
+            console.log(RHS);
+            var result=(LHS==RHS)?"hence proved":"statement wrong";
+            console.log(result);
+        }
+        add(5,8,3)
+    </script>
+</body>
+</html>

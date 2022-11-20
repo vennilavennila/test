@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tool tips</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <style>
+            #box{
+                background-color: blueviolet;
+                width: 400px;
+                height: 50px;
+                padding: 10px;
+                border-radius: 10px;
+                position: relative;
+                top:50px;
+                left: 50px;  
+                color: white;      
+            }
+            #box::after{
+                content: " ";
+                border-width: 15px;
+                border-color: blueviolet transparent transparent transparent;
+                border-style: solid;
+                position: absolute;
+                top: 70px;
+                left: 50px;
+            }
+            .change{
+                position: absolute;
+                left: 350px;
+            }
+            .look{
+                background-color: blueviolet;
+                position: absolute;
+                top: 500px;
+                left: 100px;
+                border-radius: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            You can add text, photos, and <br>
+            graphics to your design!
+            <span class="material-symbols-outlined change">
+                close
+                </span>
+        </div>
+            <span class="material-symbols-outlined look">
+                add_circle
+            </span>
+        <div id="delete"></div>
+        <div id="duplicate"></div>
+        <div id="color"></div>
+    </body>
+</html>

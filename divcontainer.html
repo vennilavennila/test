@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Iframe</title>
+        <style>
+            #container{
+                height:500px;
+                width:800px;
+                border: 2px solid black;
+                box-sizing: border-box;
+                margin: auto;
+            }
+            #top{
+                height: 50px;
+                width: 776px;
+                border: 10px solid white;
+                background-color: greenyellow;
+            }
+            #middle{
+                height: 320px;
+                width:776px;
+                border: 10px solid white;
+            }
+        #bottom{
+            height:66px;
+            width: 776px;
+            border: 10px solid white;
+            background-color: darkred;
+        }
+    #left{
+        height:319px;
+        width:650px;
+        border: 10px solid white;
+        background-color: blue;
+        float: left;
+    }
+    #right{
+        height: 319px;
+        width: 103px;
+        border: 1px solid white;
+        background-color: goldenrod;
+        float: left;
+    }
+    @media only screen and (max-width:568px){
+        #left{
+            width:100%;
+            height:80%;
+        }
+        #right{
+            height: 20%;
+            width: 100%;
+        }
+    }
+        </style>
+    </head>
+    <body>
+        <div id="container">                          
+            <div id="top"></div>
+            <div id="middle">
+                <div id="left"></div>
+                <div id="right"></div>
+            </div>
+            <div id="bottom"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calendar</title>
+        <style>
+            #container{
+                height: 600px;
+                width: 1000px;
+                border: 1px solid white;
+            }
+            #top{
+                height:80px;
+                width:999px;
+                border: 1px solid darkblue;
+                background-color: darkblue;
+            }
+            #middle{
+                height:50px;
+                width:999px;
+                border: 1px solid orangered;
+                background-color: orangered;
+            }
+            #bottom{
+                height:466px;
+                width:999px;
+                border: 1px solid white;
+            }
+            #topfirst{
+                height:79px;
+                width:99px;
+                border: 1px solid darkblue;
+                float: left;
+            }
+            #topsecond{
+                height:79px;
+                width:792px;
+                border: 1px solid darkblue;
+                float: left;
+            }
+            #topthirth{
+                height:79px;
+                width:100px;
+                border: 1px solid darkblue;
+                float: left;
+            }
+            h1,h2{
+                text-align: center;
+                color: white;
+            }
+            #sun{
+                height:49px;
+                width:142px;
+                border: 1px solid orangered;
+                float: left;
+            }
+            #mon{
+                height:49px;
+                width:142px;
+                border: 1px solid orangered;
+                float: left;
+            }
+            #tue{
+                height:49px;
+                width:140px;
+                border: 1px solid orangered;
+                float: left;
+            }
+            #wed{
+                height:49px;
+                width:141px;
+                border: 1px solid orangered;
+                float: left;
+            }
+            #thur{
+                height:49px;
+                width:140px;
+                border: 1px solid orangered;
+                float: left;
+            }
+            #fri{
+                height:49px;
+                width:140px;
+                border: 1px solid orangered;
+                float: left;
+            }
+            #sat{
+                height:49px;
+                width:140px;
+                border: 1px solid orangered;
+                float: left;
+            }
+            #num1{
+                height:75px;
+                width:998px;
+                border: 1px solid white;
+                float: left;
+            }
+            #num2{
+                height:79px;
+                width:998px;
+                border: 1px solid white;
+                float: left;
+            }
+            #num3{
+                height:75px;
+                width:998px;
+                border: 1px solid white;
+                float: left;
+            }
+            #num4{
+                height:75px;
+                width:999px;
+                border: 1px solid white;
+                float: left;
+            }
+            #num5{
+                height:75px;
+                width:999px;
+                border: 1px solid white;
+               float: left;
+            }
+            #num6{
+                height:75px;
+                width:999px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date26{
+                height:73px;
+                width:142px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date27{
+                height:73px;
+                width:142px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date28{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date29{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date30{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date1{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date2{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date3{
+                height:79px;
+                width:142px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date4{
+                height:79px;
+                width:142px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date5{
+                height:79px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date6{
+                height:79px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date7{
+                height:79px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date8{
+                height:79px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date9{
+                height:79px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date10{
+                height:73px;
+                width:142px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date11{
+                height:73px;
+                width:142px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date12{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date13{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date14{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date15{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date16{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date17{
+                height:73px;
+                width:142px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date18{
+                height:73px;
+                width:142px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date19{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date20{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date21{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date22{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date23{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date24{
+                height:73px;
+                width:142px;
+                border: 1px solid white;
+                float: left;
+            }
+            #date25{
+                height:73px;
+                width:142px;
+                border: 1px solid white;
+                float: left;
+            }
+            #datetwosix{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #datetwoseven{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #datetwoeight{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #datetwonine{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #datethreezero{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #datethreeone{
+                height:73px;
+                width:142px;
+                border: 1px solid white;
+                float: left;
+            }
+            #dateone{
+                height:73px;
+                width:142px;
+                border: 1px solid white;
+                float: left;
+            }
+            #datetwo{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #datethree{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #datefour{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #datefive{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            #datesix{
+                height:73px;
+                width:140px;
+                border: 1px solid white;
+                float: left;
+            }
+            h3{
+                text-align: center;
+            }
+            .part{
+                color: darkgray;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="top">
+                <div id="topfirst">
+                    <h1><</h1>
+                </div>
+                <div id="topsecond">
+                    <h1>MAY</h1>
+                </div>
+                <div id="topthirth">
+                    <h1>></h1>
+                </div>
+            </div>
+            <div id="middle">
+                <div id="sun">
+                    <h2>S</h2>
+                </div>
+                <div id="mon">
+                    <h2>M</h2>
+                </div>
+                <div id="tue">
+                    <h2>T</h2>
+                </div>
+                <div id="wed">
+                    <h2>W</h2>
+                </div>
+                <div id="thur">
+                    <h2>Th</h2>
+                </div>
+                <div id="fri">
+                    <h2>F</h2>
+                </div>
+                <div id="sat">
+                    <h2>S</h2>
+                </div>
+            </div>
+            <div id="bottom">
+                <div id="num1">
+                    <div id="date26">
+                        <h3 class="part">26</h3>
+                    </div>
+                    <div id="date27">
+                        <h3 class="part">27</h3>
+                    </div>
+                    <div id="date28">
+                        <h3 class="part">28</h3>
+                    </div>
+                    <div id="date29">
+                        <h3 class="part">29</h3>
+                    </div>
+                    <div id="date30">
+                        <h3 class="part">30</h3>
+                    </div>
+                    <div id="date1">
+                        <h3>1</h3>
+                    </div>
+                    <div id="date2">
+                        <h3>2</h3>
+                    </div>
+                </div>
+                <div id="num2">
+                    <div id="date3">
+                        <h3>3</h3>
+                    </div>
+                    <div id="date4">
+                        <h3>4</h3>
+                    </div>
+                    <div id="date5">
+                        <h3>5</h3>
+                    </div>
+                    <div id="date6">
+                        <h3>6</h3>
+                    </div>
+                    <div id="date7">
+                        <h3>7</h3>
+                    </div>
+                    <div id="date8">
+                        <h3>8</h3>
+                    </div>
+                    <div id="date9">
+                        <h3>9</h3>
+                    </div>
+                </div>
+                <div id="num3">
+                    <div id="date10">
+                        <h3>10</h3>
+                    </div>
+                    <div id="date11">
+                            <h3>11</h3>
+                    </div>
+                    <div id="date12">
+                        <h3>12</h3>
+                    </div>
+                    <div id="date13">
+                        <h3>13</h3>
+                    </div>
+                    <div id="date14">
+                        <h3>14</h3>
+                    </div>
+                    <div id="date15">
+                        <h3>5</h3>
+                    </div>
+                    <div id="date16">
+                        <h3>16</h3>
+                    </div>
+                </div>
+                <div id="num4">
+                    <div id="date17">
+                        <h3>17</h3>
+                    </div>
+                    <div id="date18">
+                        <h3>18</h3>
+                    </div>
+                    <div id="date19">
+                        <h3>19</h3>
+                    </div>
+                    <div id="date20">
+                        <h3>20</h3>
+                    </div>
+                    <div id="date21">
+                        <h3>21</h3>
+                    </div>
+                    <div id="date22">
+                        <h3>22</h3>
+                    </div>
+                    <div id="date23">
+                        <h3>23</h3>
+                    </div>
+                </div>
+                <div id="num5">
+                    <div id="date24">
+                        <h3>24</h3>
+                    </div>
+                    <div id="date25">
+                        <h3>25</h3>
+                    </div>
+                    <div id="datetwosix">
+                        <h3>26</h3>
+                    </div>
+                    <div id="datetwoseven">
+                        <h3>27</h3>
+                    </div>
+                    <div id="datetwoeight">
+                        <h3>28</h3>
+                    </div>
+                    <div id="datetwonine">
+                        <h3>29</h3>
+                    </div>
+                    <div id="datethreezero">
+                        <h3>30</h3>
+                    </div>
+                </div>
+                <div id="num6">
+                    <div id="datethreeone">
+                        <h3>31</h3>
+                    </div>
+                    <div id="dateone">
+                        <h3 class="part">1</h3>
+                    </div>
+                    <div id="datetwo">
+                        <h3 class="part">2</h3>
+                    </div>
+                    <div id="datethree">
+                        <h3 class="part">3</h3>
+                    </div>
+                    <div id="datefour">
+                        <h3 class="part">4</h3>
+                    </div>
+                    <div id="datefive">
+                        <h3 class="part">5</h3>
+                    </div>
+                    <div id="datesix">
+                        <h3 class="part">6</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //call back function:
+    function add(num1,num2,callback){
+      var result=num1+num2;
+      callback(result);
+      function showresult(total){
+        console.log("result is"+ total);
+      }
+    }
+    add(10,20,showresult);
+    </script>
+</body>
+</html>
